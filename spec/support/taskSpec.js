@@ -1,5 +1,13 @@
 const axios = require('axios').default;
-axios.defaults.headers.common['Authorization'] = `Bearer 6QRh-hTfR-oAAAAAAAAAAUyzReJH34rz23DlOdf8Nwy5-SzCdaD7pwip0-yJAfUF`; 
+axios.defaults.headers.common['Authorization'] = `Bearer 6QRh-hTfR-oAAAAAAAAAAUyzReJH34rz23DlOdf8Nwy5-SzCdaD7pwip0-yJAfUF`;
+
+let reporters = require('jasmine-reporters');
+let TeamCityReporter = new reporters.TeamCityReporter({
+    savePath: "..",
+    consolidateAll: false
+});
+
+jasmine.getEnv().addReporter(TeamCityReporter);
 
 const {Builder, By, until, WebElement} = require('selenium-webdriver');
 
