@@ -1,4 +1,6 @@
-# My home task and things
+# Test And Development
+A simple repository for Hometask in my "Testing and Devevelopment" course.
+KPI, IASA 2020
 
 ---
 # Tasks:
